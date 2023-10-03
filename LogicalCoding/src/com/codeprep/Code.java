@@ -2,8 +2,7 @@ package com.codeprep;
 import java.time.LocalDate;
 public class Code {
 	public static void main(String[] args) {
-		
-		System.out.println("Hello World added");
+		System.out.println("Just Checking..");
 		
 //		1. (Reverse string + Palindrome or not)	
 			/*String name="Sohel";
@@ -177,7 +176,6 @@ public class Code {
 			
 			
 			
-			System.out.println("Hello");
 			
 			
 			
