@@ -3,8 +3,6 @@ import java.time.LocalDate;
 public class Code {
 	public static void main(String[] args) {
 		
-		System.out.println("Hello World added");
-		
 //		1. (Reverse string + Palindrome or not)	
 			/*String name="Sohel";
 			int l=name.length();
