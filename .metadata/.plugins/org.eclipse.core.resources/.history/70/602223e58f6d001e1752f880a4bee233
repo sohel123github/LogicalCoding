@@ -1,0 +1,11 @@
+package com.codeprep;
+
+public class B extends Main_Method_Overload {
+	
+	public static void main(String[] args) {
+	System.out.println("B main method");
+	main(200);
+	main(10, 20);
+	main("Hello");
+	}
+}

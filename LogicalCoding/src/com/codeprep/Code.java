@@ -1,7 +1,9 @@
 package com.codeprep;
 import java.time.LocalDate;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Random;
 import java.util.Scanner;
 import java.util.Set;
@@ -11,7 +13,7 @@ public class Code {
 	public static void main(String[] args) {
 		
 //		1. (Reverse string + Palindrome or not)	
-	/*		String name="sohel";
+		/*	String name="sohel";
 			int l=name.length();
 			String rev="";
 			for(int i=l-1; i>=0; i--) {
@@ -269,10 +271,11 @@ public class Code {
 //			(kth largest element in array)-
 		/*	int[] a= {9,8,15,10,2,61};
 			int k = 4;
+			int temp;
 			for(int i=0; i<a.length; i++) {
 				for(int j=i+1; j<a.length; j++) {
 					if(a[i] < a[j]) {	//Now list sort in decending order
-						int temp = a[i];
+						temp = a[i];
 						a[i] = a[j];
 						a[j] = temp;
 					}
@@ -285,11 +288,11 @@ public class Code {
 //			(kth smallest element in array)-
 		/*	int[] a= {8,9,15,6,10,99,13,17};
 			int k = 6;
-			
+			int temp;
 			for(int i=0; i<a.length; i++) {
 				for(int j=i+1; j<a.length; j++) {
 					if(a[i] > a[j]) {	//Now list sort in assending order
-						int temp = a[i];
+						temp = a[i];
 						a[i] = a[j];
 						a[j] = temp;
 					}
@@ -344,7 +347,7 @@ public class Code {
 			}
 			System.out.println("Once appeared element - "+res);	*/
 			
-//		19. Bubble sort java program for String and Array-
+//		19. Bubble sort java program for String and Array-(trick --> 0,0,length-1)
 			
 		/*	int[] a = {36,19,29,12,5};
 			int temp;
@@ -362,6 +365,21 @@ public class Code {
 			for(int i=0; i<a.length; i++) {
 				System.out.print(a[i]+" ");
 			}	*/
+			
+			//Array apun aise bhi sort kar saktay..
+			
+			/*	System.out.println("Before sorting "+Arrays.toString(a));
+			int temp;
+			for(int i=0; i<a.length; i++) {
+				for(int j=i+1; j<a.length; j++) {
+					if(a[i] > a[j]) {
+						temp = a[i];
+						a[i] = a[j];
+						a[j] = temp;
+					}
+				}
+			}
+			System.out.println("After sorting "+Arrays.toString(a));*/
 			
 //		20.	Count Number of Digit in a number-
 		/*	int no = 123456;
@@ -398,7 +416,7 @@ public class Code {
 			System.out.println("Sum of digit in a number is- "+sum);	*/
 		
 //		23. Find largest of 3 Numbers-
-	/*	i]	Scanner sc = new Scanner(System.in);
+		/*	Scanner sc = new Scanner(System.in);
 			System.out.println("Enter first no- ");
 			int a = sc.nextInt();
 			System.out.println("Enter second no- ");
@@ -435,7 +453,7 @@ public class Code {
 //		i]	no. > 1, ii] only two factors 1 & itsself..	
 //			suppose; 19 --> 1 & 19 [Prime No.]
 //					 28 --> 1,2,4,7,14,28 [Not Prime No.]
-	/*		Scanner sc = new Scanner(System.in);
+		/*	Scanner sc = new Scanner(System.in);
 			System.out.println("Enter Your No- ");
 			int num = sc.nextInt();  //2
 			int count = 0;
@@ -603,7 +621,7 @@ public class Code {
 			
 //		36. How to count words in a string-
 			
-			Scanner sc = new Scanner(System.in);
+		/*	Scanner sc = new Scanner(System.in);
 			System.out.println("Enter String here-");
 			String s = sc.nextLine();
 			int count = 1;
@@ -612,29 +630,212 @@ public class Code {
 					count++;
 				}
 			}
-			System.out.println(count);
+			System.out.println(count);	*/
  
+//		37. final vs finally vs finalize in java -
 			
+//		i]	final --> it's a keyword used for variable, class, method
+//			final variable --> when applied to variable it makes the vaiable immutable
+//			final class --> when applied to class it makes the class non-inheritable so 
+//							it cannot be extended
+//			final method --> when applied to method then you cannot override 
+			
+//		ii] finally --> it is used with try & catch block to print claenup code weather exception 
+//						occur or not
+			
+//		iii] finalize --> it is a method invoked by garbage collector before object is being 
+//							garbage collected
+			
+//		38. Write logic for armstrong number or not-
+//			153 --> 1*1*1 --> 1
+//					5*5*5 --> 125
+//					3*3*3 --> 27
+//		    1 + 125 + 27 = 153 so this is a Armstrong number
+//			some other armstrong number are --> 1,2,3,4,5,6,7,8,9,153,370,371,407,1634,8208,9474
+//			trick to remember logic --> [ctr - rmc]
+			
+	/*		Scanner sc = new Scanner(System.in);
+			System.out.println("Enter num here-");
+			int num = sc.nextInt();
+			int cube = 0;
+			int t = num;
+			int r;
+			
+			while(num > 0) {
+				r = num % 10;
+				num = num/10;
+				cube = cube + (r*r*r);
+				}
+			if(t==cube) {
+				System.out.println("This is an armstrong number");
+			}else {
+				System.out.println("This is not an armstrong number");
+			}	*/
+			
+//		39. Can we override static method or not ?
+			
+//			No you cannot override a static method in java. Static methods are belongs to class 
+//			itself and are not associated with individual instances of class. therefore they cannot
+//			be overriden in the sense, like instance method can be overriden.
+			
+//		40. Java program to count number of duplicate words in given string -
+			
+		/*	String input = "Java is java best language is java";
+			String[] words = input.split(" ");
+//			create one hashmap - 
+			Map<String, Integer> wordCount = new HashMap<>();
+			
+//			to check each word in given array -
+			for(String word:words) {
+//			if word is present:
+				if(wordCount.containsKey(word)) {
+					wordCount.put(word, wordCount.get(word)+1);
+				}else {
+					wordCount.put(word, 1);
+				}
+			}
+//			extracting all the keys of map - wordCount:
+			Set<String> wordsInString = wordCount.keySet();
+			
+//			loop through all the words in wordcount:
+			for(String word:wordsInString) {
+				if(wordCount.get(word)>1) {
+					System.out.println(word + " : "+ wordCount.get(word));
+				}
+			}	*/
+			
+//		41. How to verify if the string contains only digits -
+			
+	/*		public static boolean isEmpty(CharSequence cs) {
+				return cs == null || cs.length() == 0;
+			}
+					
+			public static boolean isNumeric(CharSequence cs) {
+				if(isEmpty(cs)) {
+					return false;
+				}
+				
+				int len = cs.length();
+				for(int i=0; i<len; i++) {
+					if(! Character.isDigit(cs.charAt(i))) {
+						return false;
+					}
+				}
+				return true;	*/
+			
+//		42. Print 1 to 100 without using any numbers in your code - 
+			
+		/*	int one = 'A'/'A';				//1
+			String s1 = ".........."; 		//here length is --> 10
+			
+			for(int i=one; i<=(s1.length() * s1.length()); i++) {
+				System.out.println(i);
+			}	*/
+			
+//		43. Print Hello World without using semi colon (;) in java - 
+//			four ways --> i]printf==null ii]append==null iii]append.equals(null) iv]for loop(sysout)
+		/*	
+//			i]Printf
+			if(System.out.printf("Hello World" + "\n")==null) {
+				
+			}
 		
+//			ii] append==null
+			if(System.out.append("Hello World"+"\n")==null) {
+				
+			}
 		
-		
+//			iii] append.equals(null)
+			if(System.out.append("Hello World" + "\n").equals(null)) {
+				
+			}
+			
+//			iv] for loop -
+			for(int i =0; i<1; System.out.println("Hello World")) {
+				i++;
+			}	*/
+			
+//		44. Pass null argument with method overloading of string and object types - 
+			
+//			[Note --> this code is available in Seperate Class ]
+			
+//		45. Compare two integer numbers (Integer caching) in java - 
+			
+		/*	Integer num1 = 100;
+			Integer num2 = 100;
+			
+			if(num1 == num2) {
+				System.out.println("Both are equal");
+			}else {
+				System.out.println("Both are not equal");
+			}	*/
+			
+//			Output --> Both are equal [Because--> it is in integer range (-127 to 128)]
+			
+		/*	Integer num1 = 190;
+			Integer num2 = 190;
+			
+			if(num1 == num2) {
+				System.out.println("Both are equal");
+			}else {
+				System.out.println("Both are not equal");
+			}	*/	
+			
+//			Output --> Both are not equal [Because--> it is not in integer range (-127 to 128)]
+			
+//		46. what will be the output when you divide a number by zero ?
+			
+//			Number = Integer, Double, Float
+//			if you divide float & double by 0 it will give output as --> Infinity
+//			& if you divide Integer by 0 it will give output as --> Arithmetic Exception
+//			& if you divide 0.0 by 0.0 it will give output as --> NaN (Not a Number)
+	/*		
+//			System.out.println(9/0);
+			System.out.println(9.0/0);				//Infinity
+			System.out.println(12.33f/0);			//Infinity
+			System.out.println(10/0.0);				//Infinity
+			System.out.println(19.99999d/0);		//Infinity
+//			System.out.println(0/0);				//Arithmetic exception
+			System.out.println(0.0/0);				//NaN
+			System.out.println(0.0/0.0);			//NaN
+			System.out.println(12.33/0.0);			//Infinity	*/
+			
+//		47. will static block be executed with final variable ?
+			
+//			[Note --> this code is available in seperate class]
 			
 			
-		
-		
-		
-		
-		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			
 //			just for practice-
-
-		
-		
-		
-		
-		
-		
-		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			
 	}
 }
