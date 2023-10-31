@@ -1,0 +1,14 @@
+package com.codeprep.methref;
+
+public class MethAndConstRef {
+	
+	public static void main(String[] args) {
+//	System.out.println("Main methd is running...");
+	
+//	WorkInter workInter = ImplMeth::doStuff;
+	WorkInter workInter = ImplMeth::hello;
+	workInter.doTask();
+	
+	
+}
+}

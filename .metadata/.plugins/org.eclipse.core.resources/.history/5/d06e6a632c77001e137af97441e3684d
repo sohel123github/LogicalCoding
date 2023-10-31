@@ -1,0 +1,8 @@
+package com.codeprep.methref;
+
+public class MethAndConstRef {
+	
+	public static void main(String[] args) {
+	
+}
+}

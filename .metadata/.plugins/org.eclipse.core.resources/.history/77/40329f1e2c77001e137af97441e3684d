@@ -1,0 +1,5 @@
+package com.codeprep.methref;
+
+public interface WorkInter {
+
+}

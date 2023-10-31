@@ -1,0 +1,9 @@
+package com.naveen.coding;
+
+public class PrintAnInteger {
+	public static void main(String[] args) {
+		
+		
+		
+	}
+}

@@ -1,0 +1,12 @@
+package com.codeprep.methref;
+
+public class ImplMeth {
+	
+	public static void doStuff(int i) {
+		System.out.println("This is do stuff method...");
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

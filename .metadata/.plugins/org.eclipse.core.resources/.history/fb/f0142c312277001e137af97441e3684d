@@ -1,0 +1,14 @@
+package com.codeprep.optional;
+
+public class OptionalExample {
+	public static void main(String[] args) {
+		
+		String str = "Java is language";
+		if(str == null) {
+			System.out.println("This is null object");
+		}else {
+			System.out.println(str.length());
+		}
+		
+	}
+}
