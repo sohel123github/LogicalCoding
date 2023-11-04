@@ -3,7 +3,7 @@ package com.codeprep.anagram.string;
 import java.util.Arrays;
 
 public class StringAnagram {
-	
+	//s(l)(lcse)
 	public static boolean isAnagram(String s1, String s2) {
 		String str1 = s1.replaceAll("\\s", "");
 		String str2 = s2.replaceAll("\\s", "");
@@ -23,7 +23,7 @@ public class StringAnagram {
 	
 	public static void main(String[] args) {
 //		isAnagram("listen", "silent");
-		System.out.println(isAnagram("silent", "listen"));
+		System.out.println(isAnagram("silent", "lalten"));
 		System.out.println(isAnagram("cat", "mat"));
 		System.out.println(isAnagram("Dam", "Mad"));
 		

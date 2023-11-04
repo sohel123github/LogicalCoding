@@ -3,8 +3,8 @@ package com.codeprep;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+import java.util.Optional;
+
 public class Code {
 	public static void main(String[] args) {
 		
@@ -139,9 +139,9 @@ public class Code {
 			
 //		9.	How to use date data type in java-
 //			[ccf - nop]
-			/*
+			
 			 // Creating a LocalDate object for the current date
-	        LocalDate currentDate = LocalDate.now();
+	    /*    LocalDate currentDate = LocalDate.now();
 	        System.out.println("Current Date: " + currentDate);
 
 	        // Creating a specific date
@@ -150,8 +150,8 @@ public class Code {
 
 	        // Manipulating dates
 	        LocalDate futureDate = customDate.plusDays(7);
-	        System.out.println("Future Date: " + futureDate);
-			*/
+	        System.out.println("Future Date: " + futureDate);*/
+			
 			
 		
 //		10. Array logical program-
@@ -232,7 +232,7 @@ public class Code {
 				}
 			}	*/	
 		
-//		13.	Find second largest value in array-
+//		13.	Find second largest value in array -
 		
 //			[For finding largest & smallest value in an array don't go for bubble sort just use 
 //			another sorting double for loop]
@@ -344,7 +344,7 @@ public class Code {
 				System.out.println("First Duplicate element is- "+temp);
 			}else {
 				System.out.println("Duplicate element not found");
-			}*/	
+			}*/
 			
 //		18.	Find element that appears once in an array 
 //			where every other element appears twice in java
@@ -378,6 +378,8 @@ public class Code {
 			
 			//Array apun aise bhi sort kar saktay..
 			
+		
+//			int[] a = {36,19,29,12,5};
 //				System.out.println("Before sorting "+Arrays.toString(a));
 //			int temp;
 //			for(int i=0; i<a.length; i++) {
@@ -465,7 +467,7 @@ public class Code {
 //		i]	no. > 1, ii] only two factors 1 & itsself..	
 //			suppose; 19 --> 1 & 19 [Prime No.]
 //					 28 --> 1,2,4,7,14,28 [Not Prime No.]
-	/*		Scanner sc = new Scanner(System.in);
+		/*	Scanner sc = new Scanner(System.in);
 			System.out.println("Enter Your No- ");
 			int num = sc.nextInt();  //2
 			int count = 0;
@@ -489,12 +491,12 @@ public class Code {
 //			Apporoch 3- Appache Commons-lang APi-
 
 //		i] for generate random no.(Apporoch 1) --> Random class
-	//		Random ran = new Random();
+		//	Random ran = new Random();
 		/*	int ran_no = ran.nextInt(1000);
 			System.out.println(ran_no);	*/
 			
 		/*	Double ranNo = ran.nextDouble();
-			System.out.println(ranNo);  */	
+			System.out.println(ranNo);  	*/
 		
 //		   for generate random no.(Apporoch 2) --> Math class
 //			System.out.println(Math.random());
@@ -695,7 +697,7 @@ public class Code {
 			
 //		40. Java program to count number of duplicate words in given string* -
 			
-	/*		String input = "Java is java best language is java";
+		/*	String input = "java is java best language is java";
 			String[] words = input.split(" ");
 //			create one hashmap - 
 			Map<String, Integer> wordCount = new HashMap<>();
@@ -746,6 +748,7 @@ public class Code {
 			for(int i=one; i<=(s1.length() * s1.length()); i++) {
 				System.out.println(i);
 			}	*/
+			
 			
 //		43. Print "Hello World" without using semi colon (;) in java - 
 //		four ways [paaf]--> i]printf==null ii]append==null iii]append.equals(null) iv]for loop(sysout)
@@ -801,9 +804,11 @@ public class Code {
 //		46. what will be the output when you divide a number by zero ?
 			
 //			Number = Integer, Double, Float
-//			if you divide float & double by 0 it will give output as --> Infinity
-//			& if you divide Integer by 0 it will give output as --> Arithmetic Exception
+//			if you divide Integer by 0 it will give output as --> Arithmetic Exception
+//			& if you divide integer by 0.0 it will give output as --> Infinity
+//			& if you divide float & double by 0 & 0.0 it will give output as --> Infinity
 //			& if you divide 0.0 by 0.0 it will give output as --> NaN (Not a Number)
+
 	/*		
 //			System.out.println(9/0);
 			System.out.println(9.0/0);				//Infinity
@@ -887,11 +892,11 @@ public class Code {
 		/*	List<Integer> list = Arrays.asList(1,10,20,30,15);
 			
 			double avg = list.stream()
-							.map(e -> e*e)
-								.filter(e -> e>100)
-									.mapToInt(e -> e)
-										.average()
-											.getAsDouble();		//smfmag
+								.map(e -> e*e)
+									.filter(e -> e>100)
+										.mapToInt(e -> e)
+											.average()
+												.getAsDouble();		//smfmag
 			System.out.println(avg);*/
 		
 //		54. Java streams - Print even and odd numbers in a list
@@ -985,12 +990,12 @@ public class Code {
 		
 		//	List<Integer> list = Arrays.asList(0,3,10,20,30,15,1,13,1,2,2,10,40,19,3,40);
 //			int secH = list.stream()
-//					.sorted(Collections.reverseOrder())
-//						.distinct()
-//							.limit(2)
-//								.skip(1)
-//									.findFirst()
-//										.get();			//ssdlsfg
+//								.sorted(Collections.reverseOrder())
+//									.distinct()
+//										.limit(2)
+//											.skip(1)
+//												.findFirst()
+//													.get();			//ssdlsfg
 //			System.out.println("Second Highest --> "+secH);
 		
 //			lowest number using streams -
@@ -1162,7 +1167,8 @@ public class Code {
 		 
 //		72. Method & Constructor reference - 
 		
-		//	Constructor reference is remaining..args.
+		//	for method reference plz refer [package com.codeprep.methref;]
+		//  for constructor reference plz refer [package com.codeprep.constref;]
 		
 //		73. Java Stream Api - 
 		
@@ -1268,7 +1274,44 @@ public class Code {
 //			use map(); method
 //			for e.g. [If we want square of each element then]--> map(e -> e*e);	
 			
-//		74. 	
+//		74. Interface - Default & static method 
+		
+		//for Interface - Default & static method plz refer [package com.codeprep.Int.def.sta.meth;]
+		
+			//Basically there are 3 types of method available in an interface 
+//i]   Abstract method --> This method is mandatory to implements by all child classes...
+//iii] Default method  --> This method is only implemented by child classes if child classes need it...
+//iii] static method   --> This method is not implemented by any child if implemented 
+//						   explicitly then it is known as method over Hidding not method overriding...
+		
+//		75. WAP to find common elements form two arrays - 
+		
+//			String[] arr1 = {"java", "interview", "questions", "for", "exprienced"};
+//			
+//			String[] arr2 = {"java", "questions", "freshers", "interview"};
+//			
+//			Set<String> output = new HashSet<>();
+//			
+//			for(int i=0; i<arr1.length; i++) {
+//				for(int j=0; j<arr2.length; j++) {
+//					if(arr1[i] == arr2[j]) {
+//						output.add(arr1[i]);
+//						break;
+//					}
+//				}
+//			}
+//			for(String s:output) {
+//				System.out.println(s);
+//			}
+			
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		
@@ -1276,15 +1319,21 @@ public class Code {
 			
 			
 //			just for practice-
-			
 
 			
 			
 			
-			
+		
+		
+		
+		
+		
+		
 		
 			
-		
+			
+			
+			
 			
 			
 			
