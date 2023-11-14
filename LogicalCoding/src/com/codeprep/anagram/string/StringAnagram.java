@@ -23,7 +23,7 @@ public class StringAnagram {
 	
 	public static void main(String[] args) {
 //		isAnagram("listen", "silent");
-		System.out.println(isAnagram("silent", "lalten"));
+		System.out.println(isAnagram("silent", "listen"));
 		System.out.println(isAnagram("cat", "mat"));
 		System.out.println(isAnagram("Dam", "Mad"));
 		

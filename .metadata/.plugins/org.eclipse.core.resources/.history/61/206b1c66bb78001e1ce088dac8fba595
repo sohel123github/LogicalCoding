@@ -1,9 +1,0 @@
-package com.codeprep.Int.def.sta.meth;
-
-public interface Developer {
-	
-	void develop();
-	
-	void test();
-	
-}

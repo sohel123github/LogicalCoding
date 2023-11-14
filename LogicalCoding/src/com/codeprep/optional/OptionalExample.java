@@ -6,10 +6,10 @@ public class OptionalExample {
 	
 //		Example 2 - 
 	
-		public static Optional<String> getName(){
-			String name = "Sohel";
-			return Optional.ofNullable(name);
-		}
+//		public static Optional<String> getName(){
+//			String name = "Sohel";
+//			return Optional.ofNullable(name);
+//		}
 		
 	
 	public static void main(String[] args) {
@@ -54,12 +54,12 @@ public class OptionalExample {
 		
 //		Example 2 - 
 		
-		Optional<String> nameOptional = getName();
+//		Optional<String> nameOptional = getName();
 		
 		//Client can able to perform operations on this like -->
-		System.out.println(nameOptional.isPresent());
-		System.out.println(nameOptional.get());
-		System.out.println(nameOptional.orElse("This is null object"));
+//		System.out.println(nameOptional.isPresent());
+//		System.out.println(nameOptional.get());
+//		System.out.println(nameOptional.orElse("This is null object"));
 		
 		
 		

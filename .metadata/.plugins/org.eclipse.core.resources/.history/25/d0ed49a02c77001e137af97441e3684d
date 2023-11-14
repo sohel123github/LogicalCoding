@@ -1,8 +1,0 @@
-package com.codeprep.methref;
-
-public class MethAndConstRef {
-	
-	public static void main(String[] args) {
-	System.out.println("Main methd is running...");
-}
-}

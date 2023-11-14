@@ -1,12 +1,10 @@
 package com.codeprep;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
 
 public class Code {
 	public static void main(String[] args) {
+		
 		
 //		1. (Reverse string + Palindrome or not)	
 		/*	String name="sohel";
@@ -76,14 +74,14 @@ public class Code {
 //		5. Shift operator 
 			
 //			(Right shift)
-			/*int x=20;
+		/*	int x=20;
 			System.out.println(x>>2);*/
 			
 //			x=20 --> 20/4 = --> 5
 			
 			
 //			Left Shift
-			/*int x=20;
+		/*	int x=20;
 			System.out.println(x<<2);*/
 			
 //			x=20 --> 20*4 = --> 80
@@ -119,29 +117,30 @@ public class Code {
 			System.out.println("Percnatge is "+percentage);*/
 			
 //		7.  (Check character is alphabet, digit & special character) + (Scanner class) -
-		/*	Scanner sc=new Scanner(System.in);
-			System.out.println("Enter Character-");
-			char c = sc.next().charAt(0);
-			
-			if((c>='a' && c<='z') || (c>='A' && c<='Z')) {
-				System.out.println(c+" is Alphabet");
-			}else if(c>='0' && c<='9') {
-				System.out.println(c+" is Digit");
-			}else {
-				System.out.println(c+" is special Character");
-			}	*/	
+		
+//			Scanner sc=new Scanner(System.in);
+//			System.out.println("Enter Character-");
+//			char c = sc.next().charAt(0);
+//			
+//			if((c>='a' && c<='z') || (c>='A' && c<='Z')) {
+//				System.out.println(c+" is Alphabet");
+//			}else if(c>='0' && c<='9') {
+//				System.out.println(c+" is Digit");
+//			}else {
+//				System.out.println(c+" is special Character");
+//			}		
 			
 			
 			
 //		8.  Check two strings are anagram or not -
-			
+			//s(l)(lcse)
 //			[Note --> this code is available in seperate package]
 			
 //		9.	How to use date data type in java-
 //			[ccf - nop]
 			
 			 // Creating a LocalDate object for the current date
-	    /*    LocalDate currentDate = LocalDate.now();
+	  /*    LocalDate currentDate = LocalDate.now();
 	        System.out.println("Current Date: " + currentDate);
 
 	        // Creating a specific date
@@ -171,7 +170,7 @@ public class Code {
 			al.removeAll(al1);
 			al1.removeAll(al);
 			System.out.println(al);
-			System.out.println(al1);	*/
+			System.out.println(al1);*/	
 
 //		11.	Swap Two Numbers-
 //			(By using third variable-)
@@ -210,7 +209,7 @@ public class Code {
 		System.out.println("b "+b);	*/
 			
 //		12. find maximum and minimum value in array-
-//			Maximum Value-(Note*-->Here after oth index don't take greater value more than one)
+//			Maximum Value-(Note*-->Here after oth index don't take maximum value more than one)
 		/*	int[] a = {4,1,3,2,9};
 			
 			int max = a[0];
@@ -323,7 +322,7 @@ public class Code {
 				if(s.add(no) == false) {
 					System.out.print(no+" ");
 				}
-			}	*/	
+			}	*/
 		
 //			iii]Using HashTable-
 			
@@ -416,7 +415,7 @@ public class Code {
 				no = no / 10;
 			}
 			System.out.println("Number of Even no- "+even_count);
-			System.out.println("Number of Even no- "+odd_count);	*/
+			System.out.println("Number of Odd no- "+odd_count);	*/
 		
 //		22.	Sum of digit in a number-
 	/*		int no = 1234;
@@ -467,7 +466,8 @@ public class Code {
 //		i]	no. > 1, ii] only two factors 1 & itsself..	
 //			suppose; 19 --> 1 & 19 [Prime No.]
 //					 28 --> 1,2,4,7,14,28 [Not Prime No.]
-		/*	Scanner sc = new Scanner(System.in);
+		
+	/*		Scanner sc = new Scanner(System.in);
 			System.out.println("Enter Your No- ");
 			int num = sc.nextInt();  //2
 			int count = 0;
@@ -491,7 +491,7 @@ public class Code {
 //			Apporoch 3- Appache Commons-lang APi-
 
 //		i] for generate random no.(Apporoch 1) --> Random class
-		//	Random ran = new Random();
+//			Random ran = new Random();
 		/*	int ran_no = ran.nextInt(1000);
 			System.out.println(ran_no);	*/
 			
@@ -509,7 +509,7 @@ public class Code {
 		/*	String ranStr = RandomStringUtils.randomAlphabetic(10);
 			System.out.println(ranStr);	*/
 			
-//		27. Generate Factorial of a number-
+//		27. Generate Factorial of a number -
 //			Factorial --> A factorial is a function that multiplies a number 
 //			by every numer below it.
 //			e.g. --> 5 Factorial is --> 5*4*3*2*1 --> 120
@@ -521,7 +521,7 @@ public class Code {
 			for(int i=1; i<=no; i++) {
 				factorial = factorial * i;
 			}
-			System.out.println("Factorial of a "+no+" is "+factorial);	*/
+			System.out.println("Factorial of a "+no+" is "+factorial);*/	
 			
 //		28. Find sum of Array-
 		/*	int[] a = {4,3,2,1};
@@ -531,7 +531,7 @@ public class Code {
 			for(int i=0; i<a.length; i++) {
 				sum = sum + a[i];
 			}
-			System.out.println("Sum of array is- "+sum); 	*/
+			System.out.println("Sum of array is- "+sum); */	
 			
 //		29. Print Even & odd no. in an Array-
 			
@@ -671,23 +671,23 @@ public class Code {
 //			some other armstrong number are --> 1,2,3,4,5,6,7,8,9,153,370,371,407,1634,8208,9474
 //			trick to remember logic --> [ctr - rmc]
 			
-	/*		Scanner sc = new Scanner(System.in);
-			System.out.println("Enter num here-");
-			int num = sc.nextInt();
-			int cube = 0;
-			int t = num;
-			int r;
-			
-			while(num > 0) {
-				r = num % 10;
-				num = num/10;
-				cube = cube + (r*r*r);
-				}
-			if(t==cube) {
-				System.out.println("This is an armstrong number");
-			}else {
-				System.out.println("This is not an armstrong number");
-			}	*/
+//			Scanner sc = new Scanner(System.in);
+//			System.out.println("Enter num here-");
+//			int num = sc.nextInt();
+//			int cube = 0;
+//			int t = num;
+//			int r;
+//			
+//			while(num > 0) {
+//				r = num % 10;
+//				num = num/10;
+//				cube = cube + (r*r*r);
+//				}
+//			if(t==cube) {
+//				System.out.println("This is an armstrong number");
+//			}else {
+//				System.out.println("This is not an armstrong number");
+//			}	
 			
 //		39. Can we override static method or not ?
 			
@@ -697,48 +697,46 @@ public class Code {
 			
 //		40. Java program to count number of duplicate words in given string* -
 			
-		/*	String input = "java is java best language is java";
-			String[] words = input.split(" ");
-//			create one hashmap - 
-			Map<String, Integer> wordCount = new HashMap<>();
-			
-//			to check each word in given array -
-			for(String word:words) {
-//			if word is present:
-				if(wordCount.containsKey(word)) {
-					wordCount.put(word, wordCount.get(word)+1);
-				}else {
-					wordCount.put(word, 1);
-				}
+	/*	String input = "java is java best language is java";
+		String[] words = input.split(" ");
+		
+		Map<String, Integer> wordCount = new HashMap<>();
+		
+		for(String word:words) {
+			if(wordCount.containsKey(word)) {
+				wordCount.put(word, wordCount.get(word)+1);
+			}else {
+				wordCount.put(word, 1);
 			}
-//			extracting all the keys of map - wordCount:
-			Set<String> wordsInString = wordCount.keySet();
-			
-//			loop through all the words in wordcount:
-			for(String word:wordsInString) {
-				if(wordCount.get(word)>1) {
-					System.out.println(word + " : "+ wordCount.get(word));
-				}
-			}	*/
-			
-//		41. How to verify if the string contains only digits* -
-			
-	/*		public static boolean isEmpty(CharSequence cs) {
-				return cs == null || cs.length() == 0;
+		}
+		
+		for(String word:wordCount.keySet()) {
+			if(wordCount.get(word) > 1) {
+				System.out.println(word+" : "+wordCount.get(word));
 			}
-					
-			public static boolean isNumeric(CharSequence cs) {
-				if(isEmpty(cs)) {
-					return false;
-				}
-				
-				int len = cs.length();
-				for(int i=0; i<len; i++) {
-					if(! Character.isDigit(cs.charAt(i))) {
-						return false;
-					}
-				}
-				return true;	*/
+		}*/
+		
+			
+//		41. How to verify if the string contains only digits* - [Skip these code...]
+		
+		
+//			public static boolean isEmpty(CharSequence cs) {
+//				return cs == null || cs.length() == 0;
+//			}
+//					
+//			public static boolean isNumeric(CharSequence cs) {
+//				if(isEmpty(cs)) {
+//					return false;
+//				}
+//				
+//				int len = cs.length();
+//				for(int i=0; i<len; i++) {
+//					if(! Character.isDigit(cs.charAt(i))) {
+//						return false;
+//					}
+//				}
+//				return true;	
+//			}
 			
 //		42. Print 1 to 100 without using any numbers in your code - 
 			
@@ -754,24 +752,24 @@ public class Code {
 //		four ways [paaf]--> i]printf==null ii]append==null iii]append.equals(null) iv]for loop(sysout)
 			
 //			i]Printf
-		/*	if(System.out.printf("Hello World" + "\n")==null) {
-				
-			}
+//			if(System.out.printf("Hello World"+"\n")==null) {
+//				
+//			}
 		
 //			ii] append==null
-			if(System.out.append("Hello World"+"\n")==null) {
-				
-			}
+//			if(System.out.append("Hello World"+"\n")==null) {
+//				
+//			}
 		
 //			iii] append.equals(null)
-			if(System.out.append("Hello World" + "\n").equals(null)) {
-				
-			}
+//			if(System.out.append("Hello World" + "\n").equals(null)) {
+//				
+//			}
 			
 //			iv] for loop -
-			for(int i =0; i<1; System.out.println("Hello World")) {
-				i++;
-			}	*/
+//			for(int i =0; i<1; System.out.println("Hello World")) {
+//				i++;
+//			}	
 			
 //		44. Pass null argument with method overloading of string* and object types - 
 			
@@ -824,7 +822,7 @@ public class Code {
 			
 //			[Note --> this code is available in seperate class]
 			
-//		48. Print 1 to 10 number without loop - (If block)	
+//		48. Print 1 to 10 number without loop - public static void printNum{(If block)}	
 			
 //		[Note --> this code is available in seperate class]
 		
@@ -832,7 +830,7 @@ public class Code {
 			
 //			i] Array fill - 
 			
-		/*	Object[] num = new Object[100];
+			Object[] num = new Object[100];
 			
 			Arrays.fill(num, new Object() {
 					int count = 0;
@@ -841,7 +839,7 @@ public class Code {
 				return Integer.toString(++count);
 			}
 			});
-			System.out.println(Arrays.toString(num));*/
+			System.out.println(Arrays.toString(num));
 			
 //			ii] BitSet:
 		
@@ -1180,11 +1178,11 @@ public class Code {
 //		System.out.println(list1);
 		
 		//2. 
-		List<Integer> list2 = new ArrayList<>();
-		list2.add(11);
-		list2.add(12);
-		list2.add(13);
-		list2.add(14);
+//		List<Integer> list2 = new ArrayList<>();
+//		list2.add(11);
+//		list2.add(12);
+//		list2.add(13);
+//		list2.add(14);
 //		System.out.println(list2);
 		
 		//There are following ways to print list in [java streams] -->
@@ -1230,10 +1228,11 @@ public class Code {
 		//3. 
 //		List<Integer> list3 = Arrays.asList(23,12,56,28,96,62);
 //		System.out.println(list3);
+//		list3.stream().forEach(e -> System.out.println(e));
 		
 	// --> We can also perform [stream operations] on [array] By following way -->
 		
-		String[] names = {"Sohel", "Aman", "Karan", "Amol", "Raj"};
+	//	String[] names = {"Sohel", "Aman", "Karan", "Amol", "Raj"};
 		
 		//1. Filtering:
 	/*	Stream<String> filteredNames = Arrays.stream(names)
@@ -1303,12 +1302,89 @@ public class Code {
 //			for(String s:output) {
 //				System.out.println(s);
 //			}
+		
+//		76. WAP prog. to iterate HashMap - 
+		
+//			HashMap<String, Integer> map = new HashMap<>();
+//			map.put("Science", 40);
+//			map.put("Physics", 80);
+//			map.put("Chemistry", 90);
 			
+	//	1.	iterator : by using keySet() -
 		
+//			Iterator<String> itr = map.keySet().iterator();
+//			while(itr.hasNext()) {
+//				String key = itr.next();
+//				Integer value = map.get(key);
+//				System.out.println("Key = "+key+"  Value = "+value);
+//			}
 		
+	//	2. 	iterator : by using entrySet() - 
+			
+//			Iterator<Map.Entry<String,Integer>> itr1 = map.entrySet().iterator();
+//			while(itr1.hasNext()) {
+//				Map.Entry<String, Integer> entry = itr1.next();
+//				System.out.println("Key = "+entry.getKey()+" And Value = "+entry.getValue());
+//			}
+			
+	//	3.  Iterate hashMap using java 8 --> for each and lambda - 
+			
+//			map.forEach((k,v) -> System.out.println("Key = "+k+" | Value = "+v));
 		
-		
-		
+//		77. How to compare two HashMaps in java ? 
+			
+		/*	HashMap<Integer, String> map1 = new HashMap<>();
+			
+			map1.put(1, "A");
+			map1.put(2, "B");
+			map1.put(3, "C");
+			
+			HashMap<Integer, String> map2 = new HashMap<>();
+			
+			map2.put(2, "B");
+			map2.put(1, "A");
+			map2.put(3, "C");
+			
+			HashMap<Integer, String> map3 = new HashMap<>();
+			
+			map3.put(1, "A");
+			map3.put(2, "B");
+			map3.put(3, "C");
+			map3.put(3, "D");
+			
+	//		1. Compare --> By using [equals] method - 
+			System.out.println(map1.equals(map2));		//true
+			System.out.println(map1.equals(map3));      //false
+			
+	//		2. Compare --> By using [equals] KeySet() - 
+			System.out.println(map1.keySet().equals(map2.keySet()));	//true
+			System.out.println(map1.keySet().equals(map3.keySet()));	//true
+			
+	//		3. Find out extra keys for both the maps : Using HashSet - 
+			HashMap<Integer, String> map4 = new HashMap<>();
+			map4.put(1, "A");
+			map4.put(2, "B");
+			map4.put(3, "C");
+			map4.put(4, "D");
+			
+			HashSet<Integer> combineKeys = new HashSet<>(map1.keySet());	//[1,2,3]
+			
+			combineKeys.addAll(map4.keySet());		//[4]
+			combineKeys.removeAll(map1.keySet());	//[1,2,3 - 4]
+			System.out.println(combineKeys);		//[4]*/
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 		
 		
 		
@@ -1320,25 +1396,21 @@ public class Code {
 			
 //			just for practice-
 
-			
-			
-			
+
 		
 		
+
 		
-		
-		
-		
-		
+}		
+}
+	
 			
 			
 			
-			
-			
-			
+					
 			
 		
-	}
+
 
 	
-}
+
