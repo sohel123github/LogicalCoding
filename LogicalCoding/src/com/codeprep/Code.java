@@ -830,7 +830,7 @@ public class Code {
 			
 //			i] Array fill - 
 			
-			Object[] num = new Object[100];
+			/*Object[] num = new Object[100];
 			
 			Arrays.fill(num, new Object() {
 					int count = 0;
@@ -839,7 +839,7 @@ public class Code {
 				return Integer.toString(++count);
 			}
 			});
-			System.out.println(Arrays.toString(num));
+			System.out.println(Arrays.toString(num));*/
 			
 //			ii] BitSet:
 		
@@ -856,7 +856,7 @@ public class Code {
 			s = s.replaceAll("i", "iiiiiiiiii");	//100 * 10 --> 1000
 			
 			s = s.replaceAll("i", name + "\n");
-			System.out.println(s);*/
+			System.out.println(s);	*/
 			
 //		51. Leap year or not -
 		/*
