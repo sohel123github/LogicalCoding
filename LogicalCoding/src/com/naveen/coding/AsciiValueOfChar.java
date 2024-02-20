@@ -7,6 +7,11 @@ public class AsciiValueOfChar {
 		int ascii = c;
 		
 		System.out.println(ascii);
+		
+//		int c = 'l';
+//		int ascii = c;
+//		System.out.println(ascii);
+		
 	}
 
 }

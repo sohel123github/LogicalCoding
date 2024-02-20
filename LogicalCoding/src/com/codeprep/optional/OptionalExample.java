@@ -6,10 +6,10 @@ public class OptionalExample {
 	
 //		Example 2 - 
 	
-//		public static Optional<String> getName(){
-//			String name = "Sohel";
-//			return Optional.ofNullable(name);
-//		}
+		public static Optional<String> getName(){
+			String name = "Sohel";
+			return Optional.ofNullable(name);
+		}
 		
 	
 	public static void main(String[] args) {
@@ -45,7 +45,7 @@ public class OptionalExample {
 //		System.out.println(optional.isPresent());		//--> false
 //		System.out.println(optional.get());				//--> java.util.NoSuchElementException
 		
-		//If value is [null] then we can able to provide value by [orElse]
+		//If value is [null] then we can't able to provide value by [orElse]
 //		System.out.println(optional.orElse("This is an empty object"));		//for excution this you  have to be 
 																			//comment out optional.get() --> so,
 																			//it will not throw no such element exception
@@ -54,12 +54,12 @@ public class OptionalExample {
 		
 //		Example 2 - 
 		
-//		Optional<String> nameOptional = getName();
+		Optional<String> nameOptional = getName();
 		
 		//Client can able to perform operations on this like -->
-//		System.out.println(nameOptional.isPresent());
-//		System.out.println(nameOptional.get());
-//		System.out.println(nameOptional.orElse("This is null object"));
+		System.out.println(nameOptional.isPresent());
+		System.out.println(nameOptional.get());
+		System.out.println(nameOptional.orElse("This is null object"));
 		
 		
 		

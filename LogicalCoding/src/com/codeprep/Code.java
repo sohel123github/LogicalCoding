@@ -1,13 +1,12 @@
 package com.codeprep;
 
-import java.util.Arrays;
-
 public class Code {
 	public static void main(String[] args) {
 		
 		
 //		1. (Reverse string + Palindrome or not)	
-		/*	String name="sohel";
+		
+		/*	String name="Sohel";
 			int l=name.length();
 			String rev="";
 			for(int i=l-1; i>=0; i--) {
@@ -19,22 +18,23 @@ public class Code {
 			}else {
 				System.out.println("Not a Palindrome Sring");
 			}	*/
+		
 	//  2. (Palindrome number or not)
 			
-		/*	int no = 121;
-			int temp = no;
-			int rev = 0, rem;
-			while(temp != 0) {
-				rem = temp % 10;		//1,  2,  1,
-				rev = rev * 10 + rem;   //1,  12, 121,
-				temp=temp/10;           //12, 1,  0.1
-				}
-			//System.out.println(rev);
-			if(no==rev) {
-				System.out.println(no+ " Palindrome No");
-			}else {
-				System.out.println(no+ " Not a Palindrome No");
-			}	*/
+//			int no = 121;
+//			int temp = no;
+//			int rev = 0, rem;
+//			while(temp != 0) {
+//				rem = temp % 10;		//1,  2,  1,
+//				rev = rev * 10 + rem;   //1,  12, 121,
+//				temp=temp/10;           //12, 1,  0.1
+//				}
+//			//System.out.println(rev);
+//			if(no==rev) {
+//				System.out.println(no+ " Palindrome No");
+//			}else {
+//				System.out.println(no+ " Not a Palindrome No");
+//			}	
 			
 			
 //			(Palindrome number or not) + (Scanner class)
@@ -56,19 +56,19 @@ public class Code {
 			}	*/
 			
 			
-//		3. unary operator [--> here refer Incremental operator seperate package - ]
+//		3. unary operator [--> here refer unary package - ]
 			/*
-			int x=10;
+			int x=10; -->11 -->12 -->11 -->10
 			System.out.println(x++);		//10
 			System.out.println(++x);		//12
 			System.out.println(x--);		//12
 			System.out.println(--x);		//10
 			*/
 			
-//		4. Ternary operator [--> here refer Incremental operator seperate package - ]
-			/*	
-			  int x = 10;
-			  int y = 20;
+//		4. Ternary operator [--> here refer Ternary seperate package - ]
+				
+		/*	  int x = 20;
+			  int y = 10;
 			  System.out.println((x>y)? "X is greater":"Y is greater");*/
 			
 //		5. Shift operator 
@@ -136,20 +136,20 @@ public class Code {
 			//s(l)(lcse)
 //			[Note --> this code is available in seperate package]
 			
-//		9.	How to use date data type in java-
+//		9.	How to use Date data type in java-
 //			[ccf - nop]
 			
 			 // Creating a LocalDate object for the current date
-	  /*    LocalDate currentDate = LocalDate.now();
-	        System.out.println("Current Date: " + currentDate);
-
-	        // Creating a specific date
-	        LocalDate customDate = LocalDate.of(2023, 10, 5);
-	        System.out.println("Custom Date: " + customDate);
-
-	        // Manipulating dates
-	        LocalDate futureDate = customDate.plusDays(7);
-	        System.out.println("Future Date: " + futureDate);*/
+//			LocalDate currentDate = LocalDate.now();
+//	        System.out.println("Current Date: " + currentDate);
+//
+//	        // Creating a specific date
+//	        LocalDate customDate = LocalDate.of(2023, 10, 5);
+//	        System.out.println("Custom Date: " + customDate);
+//
+//	        // Manipulating dates
+//	        LocalDate futureDate = customDate.plusDays(7);
+//	        System.out.println("Future Date: " + futureDate);
 			
 			
 		
@@ -169,8 +169,8 @@ public class Code {
 			
 			al.removeAll(al1);
 			al1.removeAll(al);
-			System.out.println(al);
-			System.out.println(al1);*/	
+			System.out.println(al);			//-->aaa
+			System.out.println(al1);*/		//-->bbb, ccc, eee
 
 //		11.	Swap Two Numbers-
 //			(By using third variable-)
@@ -210,15 +210,15 @@ public class Code {
 			
 //		12. find maximum and minimum value in array-
 //			Maximum Value-(Note*-->Here after oth index don't take maximum value more than one)
-		/*	int[] a = {4,1,3,2,9};
-			
-			int max = a[0];
-			for(int i = 1; i<a.length; i++) {
-				if(a[i] > max) {
-					max = a[i];
-					System.out.println("Maximum value- "+max);
-				}
-			}	*/
+//			int[] a = {4,1,3,2,9};
+//			
+//			int max = a[0];
+//			for(int i = 1; i<a.length; i++) {
+//				if(a[i] > max) {
+//					max = a[i];
+//					System.out.println("Maximum value- "+max);
+//				}
+//			}	
 		
 //			Minimum Value-
 		/*	int[] a = {9,14,23,16,2};
@@ -358,22 +358,22 @@ public class Code {
 			
 //		19. Bubble sort java program for String and Array-(trick --> 0,0,length-1)
 			
-		/*	int[] a = {36,19,29,12,5};
-			int temp;
-			System.out.println("Array Before Sorting- "+Arrays.toString(a));
-
-			for(int i=0; i<a.length; i++) {
-				for(int j=0; j<a.length-1; j++) {
-					if(a[j] > a[j+1]) {
-						temp = a[j];
-						a[j] = a[j+1];
-						a[j+1] = temp;
-					}
-				}
-			}
-			for(int i=0; i<a.length; i++) {
-				System.out.print(a[i]+" ");
-			}	*/
+//			int[] a = {36,19,29,12,5};
+//			int temp;
+//			System.out.println("Array Before Sorting- "+Arrays.toString(a));
+//
+//			for(int i=0; i<a.length; i++) {
+//				for(int j=0; j<a.length-1; j++) {
+//					if(a[j] > a[j+1]) {
+//						temp = a[j];
+//						a[j] = a[j+1];
+//						a[j+1] = temp;
+//					}
+//				}
+//			}
+//			for(int i=0; i<a.length; i++) {
+//				System.out.print(a[i]+" ");
+//			}	
 			
 			//Array apun aise bhi sort kar saktay..
 			
@@ -414,8 +414,8 @@ public class Code {
 				}
 				no = no / 10;
 			}
-			System.out.println("Number of Even no- "+even_count);
-			System.out.println("Number of Odd no- "+odd_count);	*/
+			System.out.println("Count of Even no- "+even_count);
+			System.out.println("Count of Odd no- "+odd_count);	*/
 		
 //		22.	Sum of digit in a number-
 	/*		int no = 1234;
@@ -449,8 +449,8 @@ public class Code {
 			
 		
 //		24. Generate Fibonacci series-
-//			[A series of numbers in which each number is the sum of the two 
-//			preceding numbers]
+//			[A series of numbers in which each number is the sum of  
+//			preceding two numbers]
 //			0 1 1 2 3 5 8 13 21 34
 		
 //			int n1 = 0, n2 = 1, sum = 0;
@@ -511,7 +511,7 @@ public class Code {
 			
 //		27. Generate Factorial of a number -
 //			Factorial --> A factorial is a function that multiplies a number 
-//			by every numer below it.
+//			by every number below it.
 //			e.g. --> 5 Factorial is --> 5*4*3*2*1 --> 120
 			
 		/*	Scanner sc = new Scanner(System.in);
@@ -594,12 +594,10 @@ public class Code {
 			
 //		32. Searching element in an array-
 //			[Linear Search]
-			
-		/*	Scanner sc = new Scanner(System.in);
+		
+		/*	int[] a = {10,20,40,50,30};
+			Scanner sc = new Scanner(System.in);
 			System.out.println("Enter search no. here -->");
-			
-			int[] a = {10,20,40,50,30};
-			
 			int search_ele = sc.nextInt();
 			boolean flag = false;
 			
@@ -647,7 +645,7 @@ public class Code {
 					count++;
 				}
 			}
-			System.out.println(count);	*/
+			System.out.println("Count of words in a string - "+count);	*/
  
 //		37. final vs finally vs finalize in java -
 			
@@ -671,23 +669,23 @@ public class Code {
 //			some other armstrong number are --> 1,2,3,4,5,6,7,8,9,153,370,371,407,1634,8208,9474
 //			trick to remember logic --> [ctr - rmc]
 			
-//			Scanner sc = new Scanner(System.in);
-//			System.out.println("Enter num here-");
-//			int num = sc.nextInt();
-//			int cube = 0;
-//			int t = num;
-//			int r;
-//			
-//			while(num > 0) {
-//				r = num % 10;
-//				num = num/10;
-//				cube = cube + (r*r*r);
-//				}
-//			if(t==cube) {
-//				System.out.println("This is an armstrong number");
-//			}else {
-//				System.out.println("This is not an armstrong number");
-//			}	
+	/*		Scanner sc = new Scanner(System.in);
+			System.out.println("Enter num here-");
+			int num = sc.nextInt();
+			int cube = 0;
+			int t = num;
+			int r;
+			
+			while(num > 0) {
+				r = num % 10;
+				num = num/10;
+				cube = cube + (r*r*r);
+				}
+			if(t==cube) {
+				System.out.println("This is an armstrong number");
+			}else {
+				System.out.println("This is not an armstrong number");
+			}	*/
 			
 //		39. Can we override static method or not ?
 			
@@ -745,7 +743,7 @@ public class Code {
 			
 			for(int i=one; i<=(s1.length() * s1.length()); i++) {
 				System.out.println(i);
-			}	*/
+			}*/	
 			
 			
 //		43. Print "Hello World" without using semi colon (;) in java - 
@@ -807,16 +805,16 @@ public class Code {
 //			& if you divide float & double by 0 & 0.0 it will give output as --> Infinity
 //			& if you divide 0.0 by 0.0 it will give output as --> NaN (Not a Number)
 
-	/*		
+			
 //			System.out.println(9/0);
-			System.out.println(9.0/0);				//Infinity
-			System.out.println(12.33f/0);			//Infinity
-			System.out.println(10/0.0);				//Infinity
-			System.out.println(19.99999d/0);		//Infinity
+//			System.out.println(9.0/0);				//Infinity
+//			System.out.println(12.33f/0);			//Infinity
+//			System.out.println(10/0.0);				//Infinity
+//			System.out.println(19.99999d/0);		//Infinity
 //			System.out.println(0/0);				//Arithmetic exception
-			System.out.println(0.0/0);				//NaN
-			System.out.println(0.0/0.0);			//NaN
-			System.out.println(12.33/0.0);			//Infinity	*/
+//			System.out.println(0.0/0);				//NaN
+//			System.out.println(0.0/0.0);			//NaN
+//			System.out.println(12.33/0.0);			//Infinity	
 			
 //		47. will static block be executed with final variable ?
 			
@@ -830,7 +828,7 @@ public class Code {
 			
 //			i] Array fill - 
 			
-			/*Object[] num = new Object[100];
+		/*	Object[] num = new Object[100];
 			
 			Arrays.fill(num, new Object() {
 					int count = 0;
@@ -859,15 +857,15 @@ public class Code {
 			System.out.println(s);	*/
 			
 //		51. Leap year or not -
-		/*
-			Scanner sc = new Scanner(System.in);
+		
+		/*	Scanner sc = new Scanner(System.in);
 			System.out.println("Enter year here- ");
 			int year = sc.nextInt();
 			if(year % 400 == 0 || year % 4 == 0 && year % 100 != 0) {
 				System.out.println("Leap year");
 			}else {
 				System.out.println("Not Leap year");
-			}	*/
+			}*/	
 			
 //		52. Java streams - Print sum* of all numbers -
 			
@@ -899,42 +897,42 @@ public class Code {
 		
 //		54. Java streams - Print even and odd numbers in a list
 		
-		/*	List<Integer> list = Arrays.asList(1,2,3,4,5,6);
-			//Even numbers - 
-			List<Integer> evenList = list.stream()
-											.filter(e -> e%2 == 0)
-												.collect(Collectors.toList());	//sfc
-			System.out.println("Even no: "+evenList);
+//			List<Integer> list = Arrays.asList(1,2,3,4,5,6);
+//			//Even numbers - 
+//			List<Integer> evenList = list.stream()
+//											.filter(e -> e%2 == 0)
+//												.collect(Collectors.toList());	//sfc
+//			System.out.println("Even no: "+evenList);
 		
 			//Odd numbers - 
-			List<Integer> oddList = list.stream()
+		/*	List<Integer> oddList = list.stream()
 											.filter(e -> e%2 != 0)
 												.collect(Collectors.toList());	//sfc
 			System.out.println("Odd No: "+oddList);*/
 
 //		55. Java streams - Print No. start with 2
 		
-		/*	List<Integer> list = Arrays.asList(2, 222, 234, 567, 890,432,236,211,22);
-			List<Integer> numwith2 = list.stream()
-											.map(e -> String.valueOf(e))
-												.filter(e -> e.startsWith("2"))
-													.map(Integer::valueOf)
-														.collect(Collectors.toList()); //smfmc
-			System.out.println(numwith2);*/
+//			List<Integer> list = Arrays.asList(2, 222, 234, 567, 890, 432, 236, 211, 22);
+//			List<Integer> numwith2 = list.stream()
+//											.map(e -> String.valueOf(e))
+//												.filter(e -> e.startsWith("2"))
+//													.map(Integer::valueOf)
+//														.collect(Collectors.toList()); //smfmc
+//			System.out.println(numwith2);	
 			
 			
 //		56. Java streams - Print duplicate nos. in a list - 
 		
-		/*	List<Integer> list = Arrays.asList(1,3,10,20,15,1,13,1,2,2,10,30,19,3);
-			Set<Integer> dup = list.stream()
-									.filter(e -> Collections.frequency(list, e)>1)
-									.collect(Collectors.toSet());	//sfc
-			System.out.println(dup);*/
+//			List<Integer> list = Arrays.asList(1,3,10,20,15,1,13,1,2,2,10,30,19,3);
+//			Set<Integer> dup = list.stream()
+//									.filter(e -> Collections.frequency(list, e)>1)
+//									.collect(Collectors.toSet());	//sfc
+//			System.out.println(dup);
 		
 //		57. Java Streams - Find max & min numbers using Streams - 
 			
 			//Maximum value ?
-		//	List<Integer> list = Arrays.asList(1,3,10,20,30,15,1,13,1,2,2,10,40,19,3);
+//			List<Integer> list = Arrays.asList(1,3,10,20,30,15,1,13,1,2,2,10,40,19,3);
 //			int max = list.stream().max(Comparator.comparing(Integer::valueOf)).get(); //smg
 //			System.out.println("Maximum value is --> "+max);
 			
@@ -998,7 +996,13 @@ public class Code {
 		
 //			lowest number using streams -
 		
-//			int secL = list.stream().sorted().distinct().limit(2).skip(1).findFirst().get();
+//			int secL = list.stream()
+//								.sorted()
+//									.distinct()
+//										.limit(2)
+//											.skip(1)
+//												.findFirst()
+//													.get();
 //			System.out.println("Second Lowest --> "+secL);
 		
 //		61. Here refer "[package com.naveen.coding;]" classes for further practice -  
@@ -1007,17 +1011,17 @@ public class Code {
 		
 //		62. Array Manipulation in java ?
 		
-	/*		String[] input = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
-//			output = {"Sun","Mon", "Tue", "Wed", "Thu", "Fri", "Sat"};
-			String[] output = new String[input.length];
-			
-			for(int i=0; i<input.length; i++) {
-				output[i] = input[i].substring(0, 3);
-			}
-		
-			for(String day:output) {
-				System.out.print(day+" ");
-			}*/
+//			String[] input = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
+////			output = {"Sun","Mon", "Tue", "Wed", "Thu", "Fri", "Sat"};
+//			String[] output = new String[input.length];
+//			
+//			for(int i=0; i<input.length; i++) {
+//				output[i] = input[i].substring(0, 3);
+//			}
+//		
+//			for(String day:output) {
+//				System.out.print(day+" ");
+//			}
 		
 //		63. WAP to convert ArrayList to String array - 
 		
@@ -1037,7 +1041,7 @@ public class Code {
 				System.out.println(j);
 			}*/
 		
-//		64. WAP to copy all elements of one array into another array - 
+//		64. WAP to copy all elements from one array into another array - 
 		
 	/*		int[] arr1 = {1, 2, 3};
 			
@@ -1080,16 +1084,25 @@ public class Code {
 			
 //		66.	Array conversion - [String array to String] 
 		
-		//	1st way - 
-		/*	String[] arr = {"t", "r", "v"};  //--> trv or t;r;v or t|r|v
-			String join = String.join("|", arr);
-			System.out.println(join);	*/
-			
-		//  2nd way - 
-		/*	String join1 = Arrays.asList("t", "r", "y", "i", "n", "g")
-							.stream()
-							.collect(Collectors.joining("|"));			//sc
-			System.out.println(join1);*/
+		//	Convert String array to string - 
+		
+//			String[] st = {"S","O","H","E","L"};
+//		
+	//		//1st way - 
+	//		
+	//		String join = String.join("", st);
+	//		
+	//		System.out.println(join);
+	//		
+	//		//2nd way - 
+	//		
+	//		String join1 = String.join("|", st);
+	//		
+	//		System.out.println(join1);
+	//		
+	//		//3rd way - 
+	//		String join2 = String .join(":", st);
+	//		System.out.println(join2);
 		
 //		67. what will be the output ?
 		
@@ -1105,19 +1118,19 @@ public class Code {
 		
 //		69. Labels in java - 
 		
-		/*	System.out.println("Hello");
+	/*		System.out.println("Hello");
 			naveen:  // --> this is nothing but labels...
-			System.out.println("OK! Bye");	*/
+			System.out.println("OK! Bye");	
 		
-		/*	task:	//	--> this is nothing but labels...
+			task:	//	--> this is nothing but labels...
 				for(int i=1; i<=10; i++) {
 					System.out.println(i);
 					if(i == 5) {
 						break task;
 					}
-				}*/
+				}	*/
 		
-		/*	outerLoop:
+	/*		outerLoop:
 				for(int i=0; i<5; i++) {
 					innerLoop:
 						for(int j=0; j<5; j++) {
@@ -1373,44 +1386,13 @@ public class Code {
 			combineKeys.removeAll(map1.keySet());	//[1,2,3 - 4]
 			System.out.println(combineKeys);		//[4]*/
 			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+//		78. Comparable and comparator - 
 		
-		
-		
-		
-		
-		
-		
+			//Available seperate package --> [package com.codeprep.compl;]
+			//Available seperate package --> [package com.codeprep.compt;]
 			
+//		79. 	
 			
-//			just for practice-
 
-
-		
-		
-
-		
-}		
 }
-	
-			
-			
-			
-					
-			
-		
-
-
-	
-
+}
