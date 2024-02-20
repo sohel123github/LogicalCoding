@@ -5,3 +5,31 @@
 *.log
 metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
 metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log
+# Ignore compiled binaries
+*.exe
+*.dll
+*.class
+
+# Ignore log files
+*.log
+
+# Ignore editor backup files
+*~
+*.swp
+
+# Ignore dependency directories
+node_modules/
+venv/
+
+# Ignore operating system-specific files
+.DS_Store
+Thumbs.db
+
+*.xmi
+*.zip
+
+.metadata/.mylyn/.tasks.xml.zip
+.metadata/.mylyn/tasks.xml.zip
+.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+.metadata/.log
+
