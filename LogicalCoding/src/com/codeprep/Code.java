@@ -1,5 +1,11 @@
 package com.codeprep;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+
 public class Code {
 	public static void main(String[] args) {
 		
@@ -1383,15 +1389,20 @@ public class Code {
 			HashSet<Integer> combineKeys = new HashSet<>(map1.keySet());	//[1,2,3]
 			
 			combineKeys.addAll(map4.keySet());		//[4]
+			System.out.println(combineKeys);        //[1,2,3,4]
 			combineKeys.removeAll(map1.keySet());	//[1,2,3 - 4]
-			System.out.println(combineKeys);		//[4]*/
+			System.out.println(combineKeys);		//[4]  	*/
 			
 //		78. Comparable and comparator - 
 		
 			//Available seperate package --> [package com.codeprep.compl;]
 			//Available seperate package --> [package com.codeprep.compt;]
 			
-//		79. 	
+//		79.  
+			
+			
+			
+			
 			
 
 }

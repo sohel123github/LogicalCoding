@@ -18,12 +18,12 @@ public class Ternary_Prog {
 		
 		//Practical coding - 
 
-		int x = 5;  //x=5 -->6 -->5
-		int y = 7;  //y=7 -->8
-		int z = 0;  //z=0
+		int x = 5;  //5 -->6 -->5
+		int y = 7;  //7 -->8
+		int z = 0;  //0 -->
 		
 		z = (x++ >5)? (y++ <8? x++:y++):(y++ >6? x--:y--);
-		  //(5   >5)?				   :(7   >6) 6
+		  //(5   >5)				    (7  >6)? 6
 		System.out.println("x: "+x); //5
 		System.out.println("y: "+y); //8
 		System.out.println("z: "+z); //6
