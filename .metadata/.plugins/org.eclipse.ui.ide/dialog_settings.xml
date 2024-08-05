@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="B:\Lambda_repo\Master_lambda_in_one_video"/>
+		<item value="B:\HibernateEhcacheProgram\HibernateEhcacheProgram"/>
 		<item value="B:\Java-Core-To-Adv-Prog"/>
 	</list>
 	<section name="ExternalProjectImportWizard">
